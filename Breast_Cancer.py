@@ -3,23 +3,38 @@
 # Loading Libraries 
 
 import streamlit as st
-import pandas as pd
-from sklearn.datasets import load_breast_cancer
-from sklearn.linear_model import LogisticRegression
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, confusion_matrix
+
+st.set_page_config(
+    page_title="Introduction",
+    page_icon="♋",
+)
+
+#Background image
+import base64
+def add_bg_from_local(cry):
+    with open(cry, "rb") as cry:
+        encoded_string = base64.b64encode(cry.read())
+    st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
+        background-size: 1024x768
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+add_bg_from_local('green.jpg') 
+# ===================================
 
 
-data = load_breast_cancer()
+st.write('<h1 style=color:red;padding:5px;text-align:center>Breast Cancer</h1><hr>', unsafe_allow_html=True)
 
-df = pd.DataFrame(data.data, columns=data.feature_names)
-df['target'] = data.target
+# Introduction
+st.markdown("""<p style=color:#f2f3f4;font-weight:bolder>Breast cancer is a significant health concern impacting women worldwide. This model provides a comprehensive overview on the emerging role of machine learning in breast cancer detection.""",unsafe_allow_html=True)
 
-st.title('Breast Cancer')
-
-st.markdown("""Breast cancer is a significant health concern impacting women worldwide. This model provides a comprehensive overview on the emerging role of machine learning in breast cancer detection.""")
-
-
-
-
+# Video Information
 st.markdown('<iframe width="560" height="315" src="https://www.youtube.com/embed/KyeiZJrWrys;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
+
+# ====================================================================
