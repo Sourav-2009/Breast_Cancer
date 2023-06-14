@@ -29,10 +29,10 @@ add_bg_from_local('green.jpg')
 # ===================================
 
 
-st.write('<h1 style=color:red;padding:5px;text-align:center>Breast Cancer</h1><hr>', unsafe_allow_html=True)
+st.write("""<h1 style='color: red; padding: 5px; text-align: center; background-color: orange;'>Breast Cancer</h1><hr>""", unsafe_allow_html=True)
 
 # Introduction
-st.markdown("""<p style=color:#f2f3f4;font-weight:bolder>Breast cancer is a significant health concern impacting women worldwide. This model provides a comprehensive overview on the emerging role of machine learning in breast cancer detection.""",unsafe_allow_html=True)
+st.markdown("""<p style="color:#f2f3f4;font-weight:bolder;background-color:red;padding:50px">Breast cancer is a significant health concern impacting women worldwide. This model provides a comprehensive overview on the emerging role of machine learning in breast cancer detection.</p>""",unsafe_allow_html=True)
 
 # Video Information
 st.markdown('<iframe width="560" height="315" src="https://www.youtube.com/embed/KyeiZJrWrys;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>', unsafe_allow_html=True)
