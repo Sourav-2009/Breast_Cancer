@@ -17,7 +17,7 @@ df['target'] = data.target
 
 st.title('Breast Cancer Logistic Regression')
 
-st.markdown("""Breast cancer is a significant health concern impacting women worldwide. This report provides a comprehensive overview of breast cancer, including its prevalence, risk factors, early detection methods, treatment options, and the emerging role of machine learning in breast cancer detection.""")
+st.markdown("""Breast cancer is a significant health concern impacting women worldwide. This model provides a comprehensive overview on the emerging role of machine learning in breast cancer detection.""")
 
 st.write('Exploratory Data Analysis (EDA) and Logistic Regression Model')
 
