@@ -39,4 +39,4 @@ st.markdown('<iframe width="560" height="315" src="https://www.youtube.com/embed
 
 # ====================================================================
 
-st.markdown("""<h1 style="font-size:50px:padding:15px;background-color:white;>Under Construction 🚧🏗</h1>""",unsafe_allow_html=True)
+st.markdown("""<h1 style="font-size:50px:padding:15px;background-color:white;">Under Construction 🚧🏗</h1>""",unsafe_allow_html=True)
