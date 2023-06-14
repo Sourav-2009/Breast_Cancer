@@ -5,4 +5,4 @@ st.markdown("""<h1 style="font-size:50px:padding:1500px;background-color:white;c
 
 while True:
     st.snow()
-    time.sleep(15)
+    time.sleep(5)
