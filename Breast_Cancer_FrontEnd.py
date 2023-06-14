@@ -29,7 +29,7 @@ add_bg_from_local('green.jpg')
 # ===================================
 
 
-st.write("""<h1 style='color: red; padding: 5px; text-align: center; background-color: orange;'>Breast Cancer</h1><hr>""", unsafe_allow_html=True)
+st.write("""<h1 style='color: red; padding: 5px; text-align: center; background-color: rgba(255,255,0,0.5);'>Breast Cancer</h1><hr>""", unsafe_allow_html=True)
 
 # Introduction
 st.markdown("""<p style="color:#f2f3f4;font-weight:bolder;background-color:red;padding:50px">Breast cancer is a significant health concern impacting women worldwide. This model provides a comprehensive overview on the emerging role of machine learning in breast cancer detection.</p>""",unsafe_allow_html=True)
